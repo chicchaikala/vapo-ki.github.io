@@ -193,7 +193,7 @@ html, body {
     min-height: fit-content;
     border-radius: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
     overflow: hidden;
@@ -266,7 +266,9 @@ html, body {
     display: flex;
 }
 
-
+.content-left {
+    margin-right: 20px;
+}
 
 .content-text > ul {
     list-style-type:disc;
