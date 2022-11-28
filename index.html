@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="nav-left">
+            <div class="nav-left-wrapper">
+                <div class="nav-button nav-button-highlight">
+                    <a style="text-decoration:none" href="index.html">Portfolio</a>
+                </div>
+                <div class="nav-button">
+                    <a style="text-decoration:none" href="about.html">About Me</a>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="nav-mid">
+            <div class="nav-name">
+                <div><h3>Dié-Jay Möllers</h3></div>
+                <div><p>Coding | Audio | Art</p></div>
+                
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-right-wrapper">
+                <div class="nav-social">
+                    <a style="text-decoration:none" href="https://vapovapo.itch.io/">Itch.io</a>
+                </div>
+                <div class="nav-social">
+                    <a style="text-decoration:none" href="https://www.linkedin.com/in/die-jay-m-196570195/">Linkedin</a>
+                </div>
+                <div class="nav-social">
+                    <a style="text-decoration:none" href="https://soundcloud.com/kikivuli">Soundcloud</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="filter-wrapper">
+        <div class="filter-container">
+                <button id="filter-all" class="filter-button filter-button-highlight" onclick="filterEntries('all')">All</button>
+                <button id="filter-coding" class="filter-button" onclick="filterEntries('coding')">Coding</button>
+                <button id="filter-art" class="filter-button" onclick="filterEntries('art')">Art</button>
+                <button id="filter-audio" class="filter-button" onclick="filterEntries('audio')">Audio</button>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div id="mana" class="portfolio-wrapper portfolio-entry-show tag_audio">
+            <div class="portfolio-entry">
+                <div class="portfolio-item">
+                    <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-mana" onclick="toggleContent('mana')"></button>
+                    <div class="button-text" style="background-image: url(images/mana_logo.png);"></div>
+                </div>
+            </div>
+            <div class="portfolio-content content-hide" id="content-mana">
+                <div class="content-split">
+                    <div class="content-left">
+                        <h3>Music</h3>
+                        <div class="audio-field">
+                            M.A.N.A Theme<br>
+                            <audio controls>
+                                <source src="audio/mana_theme.mp3" type="audio/mpeg">
+                            </audio><br>
+                        </div><br>
+                        
+                        <div class="audio-field">
+                            Background<br>
+                            <audio controls>
+                                <source src="audio/mana_background.mp3" type="audio/mpeg">
+                            </audio><br>
+                        </div><br><br>
+    
+                        <h3>Sounds</h3>
+                        <div class="audio-field">
+                            Player Base<br>
+                            <audio controls>
+                                <source src="audio/mana_sound_base.mp3" type="audio/mpeg">
+                            </audio><br>
+                        </div><br>
+                        <div class="audio-field">
+                            Archmage's Reflecting Shield<br>
+                            <audio controls>
+                                <source src="audio/mana_sound_reflecting_shield.mp3" type="audio/mpeg">
+                            </audio><br>
+                        </div><br>
+                        <div class="audio-field">
+                            Shaman's Crow Attack<br>
+                            <audio controls>
+                                <source src="audio/mana_sound_shaman_attack.mp3" type="audio/mpeg">
+                            </audio><br>
+                        </div><br>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-text">
+                            <h3>M.A.N.A - Magic Ascendants of the Nexus Arena</h3>
+                            <p>
+                                M.A.N.A is a competitive VR MOBA, where 2 teams battle each other and try to take control over the nexus.<br>
+                                It was developed over the course of a year by the Media Informatics and Interactive Entertainment major at HS Mittweida.<br>
+                                <br>
+                                <ul>
+                                    <li>
+                                        Audio Lead
+                                    </li>
+                                    <li>
+                                        Compose orchestral music
+                                    </li>
+                                    <li>
+                                        Design environment and spell sounds
+                                    </li>
+                                    <li>
+                                        Record voice actors
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bunny" class="portfolio-wrapper portfolio-entry-show tag_audio tag_art tag_coding">
+            <div class="portfolio-entry">
+                <div class="portfolio-item">
+                    <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-bunny" onclick="toggleContent('bunny')"></button>
+                    <div class="button-text" style="background-image: url(images/bunny_logo.png);"></div>
+                </div>
+            </div>
+            <div class="portfolio-content content-hide" id="content-bunny">
+                <div class="content-split">
+                    <div class="content-left">
+                        <h3>Try it out on Itch.io</h3>
+                        <iframe src="https://itch.io/embed/1177812?border_width=0&amp;bg_color=272736&amp;link_color=FF6B97" width="206" height="165" frameborder="0"><a href="https://vapovapo.itch.io/bunnys-trouble">Bunny's Trouble by vapo</a></iframe>                
+                    </div>
+                    <div class="content-right">
+                        <div class="content-text">
+                            <h3>Bunny's Trouble</h3>
+                            <p>
+                                Bunny's Trouble was created by myself within a week for Brackey's second Game Jam in 2021 using the Godot engine.
+                                In a shoot-em-up style, the player has to defeat waves of enemies that get increasingly more bullet-hell-y.
+                                After each wave you are rewarded with a power-up, but be careful, for each hit you also lose a power-up!
+                                <br>
+                                <ul>
+                                    <li>
+                                        Everything was created by me for the event!
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-single">
+                    <picture style="display: flex; justify-content: space-between;">
+                        <a href="https://img.itch.zone/aW1hZ2UvMTE3NzgxMi82ODU4NjA3LnBuZw==/original/UfKhVx.png" target="_blank" rel="noopener noreferrer"><img src="https://img.itch.zone/aW1hZ2UvMTE3NzgxMi82ODU4NjA3LnBuZw==/original/UfKhVx.png" alt="bunny_pic1" style="width:500px; height:auto"></a>
+                        <a href="https://img.itch.zone/aW1hZ2UvMTE3NzgxMi82ODU4MTQ2LnBuZw==/original/jK4IyR.png" target="_blank" rel="noopener noreferrer"><img src="https://img.itch.zone/aW1hZ2UvMTE3NzgxMi82ODU4MTQ2LnBuZw==/original/jK4IyR.png" alt="bunny_pic2" style="width:500px; height:auto"></a>
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div id="pipes" class="portfolio-wrapper portfolio-entry-show tag_coding">
+            <div class="portfolio-entry">
+                <div class="portfolio-item">
+                    <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-pipes" onclick="toggleContent('pipes')"></button>
+                    <div class="button-text" style="background-image: url(images/pipes_logo.png);"></div>
+                </div>
+            </div>
+            <div class="portfolio-content content-hide" id="content-pipes">
+                <div class="content-split">
+                    <div class="content-left">
+                        <h3>Youtube</h3>
+                        <iframe width="400px" height="250px" src="https://www.youtube.com/embed/MniFQ83sfok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-text">
+                            <h3>N.E.P Never Enough Pipes</h3>
+                            <p>
+                                Never Enough Pipe was developed in Unity for the Algorithm and Datastructures class. 
+                                It's a mix of a game and a simulator that teaches you the Ford-Fulkerson algorithm in a playful manner.
+                                <br><br>
+                                <ul>
+                                    <li>
+                                        Code the game, UI and controls
+                                    </li>
+                                    <li>
+                                        UI animations
+                                    </li>
+                                    <li>
+                                        Shaders
+                                    </li>
+                                    <li>
+                                        Implementation in Unity
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="desktop" class="portfolio-wrapper portfolio-entry-show tag_coding tag_audio">
+            <div class="portfolio-entry">
+                <div class="portfolio-item">
+                    <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-desktop" onclick="toggleContent('desktop')"></button>
+                    <div class="button-text" style="background-image: url(images/desktop_logo.png);"></div>
+                </div>
+            </div>
+            <div class="portfolio-content content-hide" id="content-desktop">
+                <div class="content-split">
+                    <div class="content-left">
+                        <h3>Youtube</h3>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/rMo9STj-PJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                    </div>
+                    <div class="content-right">
+                        <div class="content-text">
+                            <h3>Desktop Disaster</h3>
+                            <p>
+                                Desktop Disaster is a little game developed in Unity for the Ludum Dare 42 Game Jam, where an anthropomorphic virus takes over your computer and keeps creating files, trying to get it to carsh.
+                                The player needs to analyze each file that gets dragged onto the desktop and decide if it's a good file or a bad file.
+                                The virus however, does not wait so you better be quick, before your storage runs out!
+                                <br><br>
+                                <ul>
+                                    <li>
+                                        Code the game
+                                    </li>
+                                    <li>
+                                        Music / Sounds
+                                    </li>
+                                    <li>
+                                        Implementation in Unity
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="web" class="portfolio-wrapper portfolio-entry-show tag_coding">
+            <div class="portfolio-entry">
+                <div class="portfolio-item">
+                    <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-web" onclick="toggleContent('web')"></button>
+                    <div class="button-text" style="background-image: url(images/web_logo.png);"></div>
+                </div>
+            </div>
+            <div class="portfolio-content content-hide" id="content-web">
+                <div class="content-single">
+                    <div class="content-text">
+                        <h3>My first website</h3>
+                        <p>
+                            This portfolio website is my first complete website that I've built from scratch.<br>
+                            I've used HTML5, CSS3 as well as JS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ar" class="portfolio-wrapper portfolio-entry-show tag_coding">
+            <div class="portfolio-entry">
+                <div class="portfolio-item">
+                    <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-ar" onclick="toggleContent('ar')"></button>
+                    <div class="button-text" style="background-image: url(images/ar_logo.png);"></div>
+                </div>
+            </div>
+            <div class="portfolio-content content-hide" id="content-ar">
+                <div class="content-split">
+                    <div class="content-left">
+                        <h3>Youtube</h3>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/Mjk8w06XE3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-text">
+                            <h3>Google Poly AR App</h3>
+                            <p>
+                                This app allows you to browse and place 3D models from Google Poly into your environment.<br>
+                                After you place them, you can freely move, scale and rotate them.<br>
+                                The Google Poly service has unfortunately been shut down, so the app does not work anymore.<br>
+                                <br>
+                                <ul>
+                                    <li>
+                                        Code the functionality in Unity
+                                    </li>
+                                    <li>
+                                        Connection to the Google Poly API
+                                    </li>
+                                    <li>
+                                        UI functionality
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="2D" class="portfolio-wrapper portfolio-entry-show tag_art">
+            <div class="portfolio-entry">
+                <div class="portfolio-item">
+                    <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-2D" onclick="toggleContent('2D')"></button>
+                    <div class="button-text" style="background-image: url(images/2D_logo.png);"></div>
+                </div>
+            </div>
+            <div class="portfolio-content content-hide" id="content-2D">
+                <div class="content-split">
+                    <div class="content-left">
+                        <img src="images/2D_pic2.gif" alt="2d_pic1" style="width:400px; height:auto">
+                    </div>
+                    <div class="content-right">
+                        <img src="images/2D_pic1.png" alt="2d_pic1" style="width:580px; height:auto">                    
+                    </div>
+                </div>
+                <div class="content-split">
+                    <div class="content-left">
+                        <img src="images/2D_pic3.gif" alt="2d_pic1" style="width:400px; height:auto">
+                    </div>
+                    <div class="content-right">
+                        <img src="images/2D_pic4.png" alt="2d_pic1" style="width:580px; height:auto">                    
+                    </div>
+                </div>
+                <div class="content-split">
+                    <div class="content-left">
+                        <img src="images/2D_pic5.png" alt="2d_pic1" style="width:400px; height:auto">
+                    </div>
+                    <div class="content-right">
+                        <img src="images/2D_pic6.png" alt="2d_pic1" style="width:580px; height:auto">                    
+                    </div>
+                </div>
+                <div class="content-split">
+                    <div class="content-left">
+                        <img src="images/2D_pic7.png" alt="2d_pic1" style="width:400px; height:auto">
+                    </div>
+                    <div class="content-right">
+                                          
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById('content-' + id);
+            const button = document.getElementById('button-' + id);
+            
+            if (content.classList.contains('content-show')) {
+                content.classList.remove('content-show');
+                content.classList.add('content-hide');
+
+                button.classList.remove('portfolio-button-highlight');
+                button.classList.add('portfolio-button-unhighlight')
+            } else {
+                content.classList.add('content-show');
+                content.classList.remove('content-hide');
+
+                button.classList.remove('portfolio-button-unhighlight');
+                button.classList.add('portfolio-button-highlight')
+            }
+        }
+
+        function filterEntries(filter) {
+            const allEntries = document.getElementsByClassName('portfolio-wrapper');
+            const filteredEntries = document.getElementsByClassName('tag_' + filter);
+            const filterButtons = document.getElementsByClassName('filter-button');
+            const activeFilterButton = document.getElementById('filter-' + filter);
+
+            for (var i = 0; i < filterButtons.length; i++) {
+                const filterButton = filterButtons[i];
+                if (filterButton.classList.contains('filter-button-highlight')) {
+                    filterButton.classList.remove('filter-button-highlight');
+                }
+            }
+            activeFilterButton.classList.add('filter-button-highlight');
+
+            if (filter == 'all') {
+                for (var i = 0; i < allEntries.length; i++) {
+                    const entry = allEntries[i];
+                    entry.classList.add('portfolio-entry-show');
+                    entry.classList.remove('portfolio-entry-hide');
+                }
+            } else {
+                for (var i = 0; i < allEntries.length; i++) {
+                    const entry = allEntries[i];
+                    if(Object.values(filteredEntries).includes(entry) == false) {
+                        entry.classList.add('portfolio-entry-hide');
+                        entry.classList.remove('portfolio-entry-show');
+
+                        if (document.getElementById('content-' + entry.id).classList.contains('content-show')) {
+                            toggleContent(entry.id);
+                        }
+                    } else {
+                        entry.classList.add('portfolio-entry-show');
+                        entry.classList.remove('portfolio-entry-hide');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
