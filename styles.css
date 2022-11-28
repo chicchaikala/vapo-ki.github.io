@@ -135,10 +135,11 @@ html, body {
 #portfolio {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     height:auto;
     width:auto;
+
+    min-width: 700px;
 
     margin-left: 20%;
     margin-right: 20%;
@@ -166,6 +167,7 @@ html, body {
 .portfolio-wrapper {
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 .portfolio-entry-hide {
@@ -194,7 +196,7 @@ html, body {
 
 .portfolio-content {
     background-color: var(--secondary-color);
-    min-width: 1000px;
+    min-width: fit-content;
     min-height: fit-content;
     border-radius: 20px;
     padding-top: 20px;
@@ -269,17 +271,12 @@ html, body {
 
 .content-split {
     display: flex;
-    margin-bottom: 20px;
 }
 
 .content-left {
-    min-width: 40%;
     margin-right: 20px;
 }
 
-.content-right {
-    width: 60%;
-}
 
 .content-text > ul {
     list-style-type:disc;
@@ -292,6 +289,20 @@ html, body {
 
 h3 {
     color: var(--tertiary-color);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px
+}
+
+.grid-item-wide {
+    grid-column: span 2;
+}
+
+.grid-item-long {
+    grid-row: span 2;
 }
 
 /* Individual Stuff */
