@@ -182,9 +182,6 @@ body {
     color: var(--text-color);
     position: sticky;
     top: 70px;
-
-
-
 }
 
 .about-me-wrapper > ul {
@@ -210,6 +207,26 @@ body {
     min-width: 150px;
     max-width: 80%;
     float: right;
+}
+
+.contact-wrapper {
+    display: flex;
+}
+
+.contact {
+    font-size: larger;
+    margin-right: 1vw;
+    text-decoration:wavy;
+}
+
+.contact a {
+    color: var(--text-color);
+    
+}
+
+.contact a:hover {
+    color: var(--tertiary-color);
+    transition: color 0.2s;
 }
 
 /* Filter Buttons */
