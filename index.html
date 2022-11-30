@@ -29,6 +29,12 @@
                     <p id="name-subtitle"><i><span>Programming Audio & Art</span></i></p>
     
                 </div>
+                <div class="nav-mobile">
+                    <p id="nav-mobile-arrow">🠗</p>
+                    <p id="nav-mobile-scroll">Scroll down</p>
+                    <p id="nav-mobile-text">to see examples of my work</p>
+                    <p id="nav-mobile-arrow">🠗</p>
+                </div>
             </div>
     
             <!--
@@ -63,8 +69,8 @@
                         </div>
                     </div>
         
-                    <div id="mana" class="portfolio-wrapper portfolio-entry-show tag_audio">
-                        <div class="portfolio-entry">
+                    <div id="mana" class="portfolio-wrapper portfolio-entry-show portfolio-wrapper-shrink tag_audio">
+                        <div id ="entry-mana" class="portfolio-entry">
                             <div class="portfolio-item">
                                 <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-mana" onclick="toggleContent('mana')"></button>
                                 <div class="button-text" style="background-image: url(images/mana_logo.png);"></div>
@@ -86,7 +92,7 @@
                                         <audio controls>
                                             <source src="audio/mana_background.mp3" type="audio/mpeg">
                                         </audio><br>
-                                    </div><br><br>
+                                    </div><br>
                 
                                     <h3>Sounds</h3>
                                     <div class="audio-field">
@@ -128,7 +134,7 @@
                                                 <li>
                                                     Record voice actors
                                                 </li>
-                                            </ul>
+                                            </ul><br>
                                         </p>
                                     </div>
                                     
@@ -136,8 +142,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="bunny" class="portfolio-wrapper portfolio-entry-show tag_audio tag_art tag_coding">
-                        <div class="portfolio-entry">
+                    <div id="bunny" class="portfolio-wrapper portfolio-entry-show portfolio-wrapper-shrink tag_audio tag_art tag_coding">
+                        <div id="entry-bunny" class="portfolio-entry">
                             <div class="portfolio-item">
                                 <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-bunny" onclick="toggleContent('bunny')"></button>
                                 <div class="button-text" style="background-image: url(images/bunny_logo.png);"></div>
@@ -147,7 +153,9 @@
                             <div class="content-split">
                                 <div class="content-left">
                                     <h3>Try it out on Itch.io</h3>
-                                    <iframe src="https://itch.io/embed/1177812?border_width=0&amp;bg_color=272736&amp;link_color=FF6B97" width="206" height="165" frameborder="0"><a href="https://vapovapo.itch.io/bunnys-trouble">Bunny's Trouble by vapo</a></iframe>                
+                                    <div class="itch">
+                                        <iframe id="itch" src="https://itch.io/embed/1177812?border_width=0&amp;bg_color=272736&amp;link_color=FF6B97" width="206" height="165" frameborder="0"><a href="https://vapovapo.itch.io/bunnys-trouble">Bunny's Trouble by vapo</a></iframe>                
+                                    </div>
                                 </div>
                                 <div class="content-right">
                                     <div class="content-text">
@@ -177,8 +185,8 @@
             
                         </div>
                     </div>
-                    <div id="pipes" class="portfolio-wrapper portfolio-entry-show tag_coding">
-                        <div class="portfolio-entry">
+                    <div id="pipes" class="portfolio-wrapper portfolio-entry-show portfolio-wrapper-shrink tag_coding">
+                        <div id="entry-pipes" class="portfolio-entry">
                             <div class="portfolio-item">
                                 <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-pipes" onclick="toggleContent('pipes')"></button>
                                 <div class="button-text" style="background-image: url(images/pipes_logo.png);"></div>
@@ -188,7 +196,7 @@
                             <div class="content-split">
                                 <div class="content-left">
                                     <h3>Youtube</h3>
-                                    <iframe width="400px" height="250px" src="https://www.youtube.com/embed/MniFQ83sfok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe id="youtube" width="400px" height="250px" src="https://www.youtube.com/embed/MniFQ83sfok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div class="content-right">
                                     <div class="content-text">
@@ -217,8 +225,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="desktop" class="portfolio-wrapper portfolio-entry-show tag_coding tag_audio">
-                        <div class="portfolio-entry">
+                    <div id="desktop" class="portfolio-wrapper portfolio-entry-show portfolio-wrapper-shrink tag_coding tag_audio">
+                        <div id="entry-desktop" class="portfolio-entry">
                             <div class="portfolio-item">
                                 <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-desktop" onclick="toggleContent('desktop')"></button>
                                 <div class="button-text" style="background-image: url(images/desktop_logo.png);"></div>
@@ -228,7 +236,7 @@
                             <div class="content-split">
                                 <div class="content-left">
                                     <h3>Youtube</h3>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/rMo9STj-PJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                                    <iframe id="youtube" width="400" height="250" src="https://www.youtube.com/embed/rMo9STj-PJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
                                 </div>
                                 <div class="content-right">
                                     <div class="content-text">
@@ -255,8 +263,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="web" class="portfolio-wrapper portfolio-entry-show tag_coding">
-                        <div class="portfolio-entry">
+                    <div id="web" class="portfolio-wrapper portfolio-entry-show portfolio-wrapper-shrink tag_coding">
+                        <div id="entry-web" class="portfolio-entry">
                             <div class="portfolio-item">
                                 <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-web" onclick="toggleContent('web')"></button>
                                 <div class="button-text" style="background-image: url(images/web_logo.png);"></div>
@@ -279,8 +287,8 @@
                             </div>
                         </div>
                     </div>
-                    <div id="ar" class="portfolio-wrapper portfolio-entry-show tag_coding">
-                        <div class="portfolio-entry">
+                    <div id="ar" class="portfolio-wrapper portfolio-entry-show portfolio-wrapper-shrink tag_coding">
+                        <div id="entry-ar" class="portfolio-entry">
                             <div class="portfolio-item">
                                 <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-ar" onclick="toggleContent('ar')"></button>
                                 <div class="button-text" style="background-image: url(images/ar_logo.png);"></div>
@@ -290,7 +298,7 @@
                             <div class="content-split">
                                 <div class="content-left">
                                     <h3>Youtube</h3>
-                                    <iframe width="400" height="250" src="https://www.youtube.com/embed/Mjk8w06XE3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe id="youtube" width="400" height="250" src="https://www.youtube.com/embed/Mjk8w06XE3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                                 <div class="content-right">
                                     <div class="content-text">
@@ -317,8 +325,8 @@
                             </div>
                         </div>
                     </div> 
-                    <div id="2D" class="portfolio-wrapper portfolio-entry-show tag_art">
-                        <div class="portfolio-entry">
+                    <div id="2D" class="portfolio-wrapper portfolio-entry-show portfolio-wrapper-shrink tag_art">
+                        <div id="entry-2D" class="portfolio-entry">
                             <div class="portfolio-item">
                                 <button type="button" class="portfolio-button portfolio-button-unhighlight" id="button-2D" onclick="toggleContent('2D')"></button>
                                 <div class="button-text" style="background-image: url(images/2D_logo.png);"></div>
@@ -367,7 +375,7 @@
                     Since I was a child, I was fascinated with Video Games and Software Development.<br>
                     So, now you can usually find me working on some sort of project.<br>
                     Other than that, I'm also obsessed with languages and linguistics.<br>
-                    <br>
+                    <br><br>
                     <h3>
                         Skills
                     </h3>
@@ -398,19 +406,40 @@
     function toggleContent(id) {
         const content = document.getElementById('content-' + id);
         const button = document.getElementById('button-' + id);
+        const entry = document.getElementById('entry-' + id)
+        const wrapper = document.getElementById(id);
         
-        if (content.classList.contains('content-show')) {
-            content.classList.remove('content-show');
+        if (wrapper.classList.contains('portfolio-wrapper-expand')) {
+            if (id == '2D') {
+                content.classList.remove('content-show-long')
+
+            } else {
+                content.classList.remove('content-show');
+            }
+            
             content.classList.add('content-hide');
 
             button.classList.remove('portfolio-button-highlight');
-            button.classList.add('portfolio-button-unhighlight')
+            button.classList.add('portfolio-button-unhighlight');
+
+            
+            wrapper.classList.add('portfolio-wrapper-shrink');
+            wrapper.classList.remove('portfolio-wrapper-expand');
         } else {
-            content.classList.add('content-show');
+            if (id == '2D') {
+                content.classList.add('content-show-long');
+
+            } else {
+                content.classList.add('content-show');
+            }
             content.classList.remove('content-hide');
 
             button.classList.remove('portfolio-button-unhighlight');
-            button.classList.add('portfolio-button-highlight')
+            button.classList.add('portfolio-button-highlight');
+
+            wrapper.classList.add('portfolio-wrapper-expand');
+            wrapper.classList.remove('portfolio-wrapper-shrink');
+            console.log("Hello??");
         }
     }
 
