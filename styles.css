@@ -249,6 +249,12 @@ body {
     border-radius: 20px;
 }
 
+#filter-title {
+    text-align: center;
+    color: var(--tertiary-color);
+    font-size: smaller;
+}
+
 .filter-button {
     border: none;
     color: var(--text-color);
