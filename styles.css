@@ -468,6 +468,10 @@ h3 {
 
 /* Individual Stuff */
 
+#button-tango {
+    background-image: url(images/tango_bg.png)
+}
+
 #button-mana {
     background-image: url(images/mana_bg.png);
 }
