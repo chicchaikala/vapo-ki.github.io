@@ -500,6 +500,13 @@ h3 {
     background-image: url(images/2D_bg.png);
 }
 
+#button-preydator {
+    background-image: url(images/preydator_bg.png);
+}
+
+#button-volatile {
+    background-image: url(images/volatile_bg.png);
+}
 
 /* MOBILE */
 
